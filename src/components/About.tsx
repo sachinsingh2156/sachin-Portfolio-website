@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { User, GraduationCap, Briefcase } from 'lucide-react';
+import pic1 from '../assets/pic1.jpeg';
 
 const About: React.FC = () => {
   return (
@@ -58,7 +59,7 @@ const About: React.FC = () => {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=600&fit=crop"
+              src={pic1}
               alt="Working"
               className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
             />

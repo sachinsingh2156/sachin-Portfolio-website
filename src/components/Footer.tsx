@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-muted-foreground">
-              © 2024 John Doe. All rights reserved.
+              © 2025 Sachin Singh. All rights reserved.
             </p>
           </div>
           
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-6 pt-6 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            Designed and developed by John Doe. Built with React, TypeScript, and Tailwind CSS.
+            Designed and developed by Sachin Singh. Built with React, TypeScript, and Tailwind CSS.
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -35,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-primary">Portfolio</span>
+            <span className="text-2xl font-bold text-primary"><img src={logo} alt="SACHIN" className="h-[10rem]" /></span>
           </div>
           
           <div className="hidden md:block">

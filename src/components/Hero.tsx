@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowDown } from 'lucide-react';
+import profile from '../assets/profile.jpeg';
+
+
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = ['Software Developer', 'Full Stack Engineer', 'React Specialist', 'Problem Solver'];
+  const titles = ['Software Developer', 'Full Stack Engineer', 'ML Engineer', 'Problem Solver'];
   
   useEffect(() => {
     const currentTitle = titles[currentIndex];
@@ -35,12 +38,12 @@ const Hero: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-secondary/5">
+    <section id="home" className="pt-[4rem] min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <div className="mb-8">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+              src={profile}
               alt="Profile"
               className="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl border-4 border-primary/20 hover:scale-105 transition-transform duration-300"
             />
@@ -48,7 +51,7 @@ const Hero: React.FC = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-foreground">Hi, I'm </span>
-            <span className="text-primary">John Doe</span>
+            <span className="text-primary">Sachin Singh</span>
           </h1>
           
           <div className="text-2xl md:text-3xl mb-6 h-12">
